@@ -34,6 +34,7 @@ public class OptimizedEventBus implements EventBus {
         map.put(GrimReloadEvent.class, new AtomicReference<>(new OptimizedListener[0]));
         map.put(GrimQuitEvent.class, new AtomicReference<>(new OptimizedListener[0]));
         map.put(GrimJoinEvent.class, new AtomicReference<>(new OptimizedListener[0]));
+        map.put(GrimAlertEvent.class, new AtomicReference<>(new OptimizedListener[0]));
 
         map.put(FlagEvent.class, new AtomicReference<>(new OptimizedListener[0]));
         map.put(CommandExecuteEvent.class, new AtomicReference<>(new OptimizedListener[0]));
